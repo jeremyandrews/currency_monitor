@@ -14,5 +14,6 @@
 #  EUR = Euros
 #  GBP = British Pound Sterling
 #  USD = US Dollars
-currency_from=USD
+# The currency_from variable can only be changed with a paid account.
+#currency_from=USD
 currency_to=EUR

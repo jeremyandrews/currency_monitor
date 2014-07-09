@@ -8,7 +8,11 @@ parser = SafeConfigParser()
 # @todo: pretty error if no configuration file exists.
 parser.read(['currency_monitor.cfg', os.path.expanduser('~/.currency_monitor.cfg')])
 app_id = parser.get('openexchangerates', 'app_id')
-currency_from = parser.get('openexchangerates', 'currency_from')
+if (parser.has_option('openexchangerates', 'currency_from')):
+	currency_from = parser.get('openexchangerates', 'currency_from')
+else:
+	# Default currency provided by Open Exhange Rates is USD
+	currency_from = 'USD'
 currency_to = parser.get('openexchangerates', 'currency_to')
 
 currencyURL = "http://openexchangerates.org/api/currencies.json"
