@@ -16,4 +16,5 @@
 #  USD = US Dollars
 # The currency_from variable can only be changed with a paid account.
 #currency_from=USD
-currency_to=EUR
+# Even free accounts can change currency_to.
+#currency_to=EUR

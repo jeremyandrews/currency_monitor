@@ -11,9 +11,14 @@ app_id = parser.get('openexchangerates', 'app_id')
 if (parser.has_option('openexchangerates', 'currency_from')):
 	currency_from = parser.get('openexchangerates', 'currency_from')
 else:
-	# Default currency provided by Open Exhange Rates is USD
+	# Default currency provided by Open Exhange Rates is USD.
 	currency_from = 'USD'
-currency_to = parser.get('openexchangerates', 'currency_to')
+
+if (parser.has_option('openexchangerates', 'currency_to')):
+	currency_to = parser.get('openexchangerates', 'currency_to')
+else:
+	# By default we'll convert to euros.
+	currency_to= 'EUR'
 
 currencyURL = "http://openexchangerates.org/api/currencies.json"
 currency = urllib.urlopen(currencyURL)
