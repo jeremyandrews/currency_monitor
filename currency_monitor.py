@@ -5,7 +5,7 @@ import json
 
 parser = SafeConfigParser()
 # @todo: pretty error if no configuration file exists.
-parser.read(['convert.cfg', os.path.expanduser('~/.convert.cfg')])
+parser.read(['currency_monitor.cfg', os.path.expanduser('~/.currency_monitor.cfg')])
 app_id = parser.get('openexchangerates', 'app_id')
 currency_from = parser.get('openexchangerates', 'currency_from')
 currency_to = parser.get('openexchangerates', 'currency_to')

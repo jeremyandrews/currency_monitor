@@ -1,4 +1,4 @@
-# Rename this file to ~/.convert.cfg and configure the following parameters.
+# Rename this file to ~/.currency_monitor.cfg and configure the following parameters.
 
 [openexchangerates]
 # Go to https://openexchangerates.org/signup and sign up for an Open Exchange 
