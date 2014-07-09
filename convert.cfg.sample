@@ -1,0 +1,18 @@
+# Rename this file to ~/.convert.cfg and configure the following parameters.
+
+[openexchangerates]
+# Go to https://openexchangerates.org/signup and sign up for an Open Exchange 
+# Rates account. The https://openexchangerates.org/signup/free Forever Free
+# Plan works fine. Set app_id to the Ap ID provided by the Open Exchange Rates
+# site.
+#app_id=
+
+# To see available currencies, run "python convert.py --currencies" or visit
+# https://openexchangerates.org/currencies.json
+# Popular currencies include:
+#  BTC = Bitcoins
+#  EUR = Euros
+#  GBP = British Pound Sterling
+#  USD = US Dollars
+currency_from=USD
+currency_to=EUR
